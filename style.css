@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    font-family: 'Poppins', sans-serif;
+}
+
+.marquee{
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: cursive;
+    width: 100%;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(100%);
+
+    } to {
+        transform: translateX(-100%);
+    }
+    
+}
+
+
+.gallery {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery video {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    transition: transform 0.4s ease;
+}
+
+.gallery video:hover {
+    transform: scale(1.1);
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.heart {
+    position: fixed;
+    bottom: -50px;
+    color: white;
+    font-size: 20px;
+    animation: floatUp 8s linear infinite;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.dropbtn {
+    background: white;
+    color: #ff4b7d;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    
+}
+
+.dropbtn:hover {
+    transform: scale(1.05);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 220px;
+    border-radius: 15px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+    animation: fadeDown 0.4s ease;
+}
+
+.dropdown-content a {
+    color: #ff4b7d;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffe6ec;
+}
+
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
