@@ -8,6 +8,8 @@
 body{
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     font-family: 'Poppins', sans-serif;
+    max-width: 1024;
+    width: 100%;
 }
 
 .marquee{
@@ -128,4 +130,5 @@ body{
 @keyframes fadeDown {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
+
 }
