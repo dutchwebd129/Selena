@@ -8,7 +8,7 @@
 body{
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     font-family: 'Poppins', sans-serif;
-    max-width: 1024;
+    max-width: 1024px;
     width: 100%;
 }
 
@@ -132,3 +132,4 @@ body{
     to { opacity: 1; transform: translateY(0); }
 
 }
+
